@@ -15,7 +15,7 @@ public class KnowNIO {
         FileOutputStream outputStream = new FileOutputStream(file);
         FileChannel channel = outputStream.getChannel();
         ByteBuffer buffer = ByteBuffer.allocate(1024);
-        String string = "hello java nio";
+        String string = "hello_java_nio";
         buffer.put(string.getBytes());
         buffer.flip();     //此处必须要调用buffer的flip方法
         channel.write(buffer);
