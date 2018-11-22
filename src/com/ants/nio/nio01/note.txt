@@ -1,0 +1,24 @@
+JAVA NIO：java no-blocking IO
+    java.nio全称java non-blocking IO，是指jdk1.4 及以上版本里提供的新api（New IO） ，
+    为所有的原始类型（boolean类型除外）提供缓存支持的数据容器，使用它可以提供非阻塞式的高伸缩性网络。
+核心组件：
+    Channel：Channel 有点象流。 数据可以从Channel读到Buffer中，也可以从Buffer 写到Channel中。
+        FileChannel
+        DatagramChannel
+        SocketChannel
+        ServerSocketChannel
+    Buffer：
+        ByteBuffer
+        CharBuffer
+        DoubleBuffer
+        FloatBuffer
+        IntBuffer
+        LongBuffer
+        ShortBuffer
+        MappedByteBuffer
+    Selector：Selector允许单线程处理多个 Channel。
+        使用Selector，得向Selector注册Channel，然后调用它的select()方法。
+        select()会一直阻塞到某个注册的通道有事件就绪。一旦这个方法返回，线程就可以处理这些事件。
+
+
+
