@@ -1,0 +1,4 @@
+TransferFrom:TransferTo  从源文件复制到目标文件
+在Java NIO中，如果两个通道中有一个是FileChannel，那你可以直接将数据从一个channel传输到另外一个channel。
+方法的输入参数position表示从position处开始向目标文件写入数据，count表示最多传输的字节数。
+如果源通道的剩余空间小于 count 个字节，则所传输的字节数要小于请求的字节数。
